@@ -63,7 +63,7 @@ The project uses Python's standard library; no external package installation is 
 
     python -m unittest discover -s tests -v
 
-GitHub Actions runs these tests on pushes and pull requests.
+The suite includes unit tests and command-line end-to-end checks using disposable synthetic files. It checks manifest creation, successful verification, changed-file detection, prompt/secret privacy and controlled handling of missing files. GitHub Actions runs the suite on pushes and pull requests; no GPU or cloud generation is needed for these checks.
 
 ## Roadmap
 
